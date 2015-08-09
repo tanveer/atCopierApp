@@ -1,0 +1,3 @@
+<% @makes.each do |make| %>
+  <h2><%= make.id %> => <%= link_to make.name, Models_path(make.id) %></h2>
+<% end %>
