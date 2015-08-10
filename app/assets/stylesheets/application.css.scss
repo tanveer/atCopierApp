@@ -13,3 +13,27 @@
  *= require_tree .
  *= require_self
  */
+
+@import url(http://fonts.googleapis.com/css?family=Lora|Ubuntu:300,400,500); 
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body{
+  background-color: #3c3c3c;
+}
+.images{
+  display: inline-block;
+  position: relative;
+  width: 250px;
+}
+.button{
+  width: 125px;
+}
+.center{
+  text-align: center;
+}
+.logo{
+  font-family: 'Lucida Handwriting';
+  font-size: 2em;
+  font-variant: small-caps;
+}

@@ -1,3 +1,14 @@
-<% @makes.each do |make| %>
-  <h2><%= make.id %> => <%= link_to make.name, Models_path(make.id) %></h2>
-<% end %>
+<div class="center">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <% @makes.each do |make| %>
+      <div class="thumbnail images">
+        <div class="caption height: 250px;">
+          <h3><%= make.name %></h3>
+          <%= link_to make.name, models_path(make), class: "btn btn-primary button" %>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div> 
+</div>

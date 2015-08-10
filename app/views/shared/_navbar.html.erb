@@ -1,0 +1,31 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-brand logo" ><%= link_to "@Copier", manufacturer_path%></div>
+    </div><!--navbar header-->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <% if user_signed_in? %>
+        <ul class="nav navbar-nav">
+          <li><%= link_to 'Home'%></li>
+          <li><%= link_to 'Forum'%></li>
+          <li><%= link_to 'Error'%></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %> </li>
+            <li><%= link_to 'Post'  %></li>
+          </ul>
+        <% else %>
+        <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to 'Sign Up', new_user_registration_path %></li>
+            <li><%= link_to 'Sign In', user_session_path %></li>
+        </ul>
+        <% end %>
+    </div><!--.navbar collaps-->
+  </div><!--container-->
+</nav>

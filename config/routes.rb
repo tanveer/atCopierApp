@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
-    
-
-  get 'Codes' => 'codes#index'
+  devise_for :users
+  get 'codes' => 'codes#index'
   get 'codes/show' 
-  root 'makes#index', as: 'Manufactiurere'  
-  get 'Models' => 'makes#show'
-
+  root 'makes#index', as: 'manufacturer'  
+  get 'models' => 'makes#show'
 end
