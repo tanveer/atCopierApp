@@ -57,8 +57,6 @@ ActiveRecord::Schema.define(version: 20150809223144) do
     t.string   "slug"
   end
 
-  add_index "models", ["make_id"], name: "index_models_on_make_id", using: :btree
-
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
