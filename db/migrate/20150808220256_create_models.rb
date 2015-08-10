@@ -5,6 +5,6 @@ class CreateModels < ActiveRecord::Migration
       t.references :make, index: true, foreign_key: true
       t.timestamps null: false
     end
-    add_index :models, [:make_id]
+    # add_index :models, [:make_id]
   end
 end
