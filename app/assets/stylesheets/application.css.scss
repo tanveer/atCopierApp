@@ -18,10 +18,11 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-body{
-  background-color: #3c3c3c;
+body {
+  background-color: #949494;
+  padding-top:  70px;
 }
-.images{
+.images {
   display: inline-block;
   position: relative;
   width: 250px;
@@ -29,7 +30,7 @@ body{
 .button{
   width: 125px;
 }
-.center{
+.center {
   text-align: center;
 }
 .logo {
@@ -37,13 +38,23 @@ body{
   font-size: 2em;
   font-variant: small-caps;
 }
-#text-color{
+#text-color:hover {
+    color: #fff;
+}
+#text-color {
     color: #ff7373;
 }
-.caption h3{
+.caption h3 {
   color: #ff7373;
 }
-
+.caption h3:hover {
+  color: #acacac;
+}
+.box {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+}
 
 
 
