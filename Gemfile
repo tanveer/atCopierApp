@@ -15,6 +15,7 @@ gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'devise'
 gem "paperclip", "~> 4.3"
 gem 'simple_form'
+gem 'will_paginate', '~> 3.0.7'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do

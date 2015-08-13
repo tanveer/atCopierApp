@@ -8,7 +8,7 @@ class MakesController < ApplicationController
   end
 
   def show
-    @models = Model.all.where(make_id: params[:format])
+    @models = Model.all.where(make_id: params[:format]).paginate(:page => params[:page], :per_page => 8)
   end
 
   private
