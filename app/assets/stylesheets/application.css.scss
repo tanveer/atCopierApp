@@ -19,7 +19,7 @@
 @import "bootstrap";
 
 
-body {
+/*body {
   background-color: #7d7d7d;
   padding-top:  70px;
 }
@@ -71,7 +71,7 @@ body {
 .nav-color{
   background-color: #b35555;
 }
-
+*/
 
 
 /*<!--Summertime theme-->
@@ -228,9 +228,9 @@ body {
   background-color: #2a334f;
 }<--END-->*/
 
-/*<--Coffee Theme-->
+/*<--Coffee Theme-->*/
 body {
-  background-color: #854442;
+  background-color: #be9b7b;
   padding-top:  70px;
 }
 .title {
@@ -252,10 +252,15 @@ body {
   font-variant: small-caps;
 }
 #text-color:hover {
-    color: #fff4e6;
+    color: #fff;
+    -webkit-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+    -ms-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 800ms ease;
 }
 #text-color {
-    color: #854442;
+    color: #be9b7b;
 }
 .caption h3 {
   color: #be9b7b;
@@ -269,11 +274,34 @@ body {
   border-radius: 10px;
 }
 .btn-custom{
-  background-color: #854442;
+  background-color: #fff4e6;
   padding:  1rem;
-  border-radius: 2em;
-  border: 0.05em solid black;
-} <--End--> */
+  border-radius: .5em;
+  border: 0.25em solid #854442;
+  width: 75px;
+  text-decoration: none;
+}
+.btn-custom:hover{
+  background-color: #be9b7b;
+    -webkit-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+    -ms-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 800ms ease;
+}
+.nav-color{
+  background-color: rgb(133,68,66);
+}
+.nav-color:hover{
+    background-color: rgba(60,47,47, 0.9);
+    -webkit-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+    -ms-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 800ms ease;
+}
+
+/*<--End--> */
 
 /*<!--will_paginate styles -->*/
 

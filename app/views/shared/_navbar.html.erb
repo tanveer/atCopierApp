@@ -7,18 +7,18 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <div class="navbar-brand logo" id="text-color">@Copier</div>
+      <div class="navbar-brand logo" id="text-color"><%= link_to '@Copier', manufacturer_path, id: "text-color" %></div>
     </div><!--navbar header-->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <% if user_signed_in? %>
         <ul class="nav navbar-nav">
-          <li><%= link_to 'Home'%></li>
-          <li><%= link_to 'Forum'%></li>
-          <li><%= link_to 'Error'%></li>
+          <li><%= link_to 'Home', manufacturer_path, id: "text-color" %></li>
+          <li><%= link_to 'Forum' , manufacturer_path, id: "text-color"%></li>
+          <li><%= link_to 'Error', manufacturer_path, id: "text-color"%></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %> </li>
-            <li><%= link_to 'Post'  %></li>
+            <li><%= link_to "Sign out", destroy_user_session_path,id: "text-color", method: :delete %> </li>
+            <li><%= link_to 'Post', manufacturer_path, id: "text-color"%></li>
           </ul>
         <% else %>
         <ul class="nav navbar-nav navbar-right">
