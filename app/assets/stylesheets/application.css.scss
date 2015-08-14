@@ -269,9 +269,10 @@ body {
   color: #fff4e6;
 }
 .box {
-  background-color: #fff;
+  background-color: #4b3832;
   padding: 2rem;
   border-radius: 10px;
+  position: relative;
 }
 .btn-custom{
   background-color: #fff4e6;
@@ -299,6 +300,12 @@ body {
     -ms-transition: all 800ms ease;
     -o-transition: all 800ms ease;
     transition: all 800ms ease;
+}
+.form-label-color{
+  color: #be9b7b;
+}
+.inline{
+  display: inline-block;
 }
 
 /*<--End--> */

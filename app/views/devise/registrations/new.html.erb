@@ -1,10 +1,10 @@
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <div class="box">
-      <h2>Sign up</h2>
+      <h2 class="form-label-color">Sign up</h2>
       <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
         <%= f.error_notification %>
-        <div class="form-inputs">
+        <div class="form-inputs form-label-color">
           <%= f.input :first_name, required: false, autofocus: true %>
           <%= f.input :last_name, required: false, autofocus: true %>
           <%= f.input :avatar, as: :file %>
@@ -13,10 +13,10 @@
           <%= f.input :password_confirmation, required: true %>
         </div>
         <div class="form-actions">
-          <%= f.button :submit, "Sign up" %>
+          <%= f.button :submit, "Sign up", class: 'btn btn-custom' %> <%= render "devise/shared/links" %>
         </div>
         <% end %>
-      <%= render "devise/shared/links" %>
+     
     </div>
   </div>
 </div>
