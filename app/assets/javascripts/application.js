@@ -20,3 +20,11 @@ window.setTimeout(function() {
         $(this).remove(); 
     });
 }, 4500);
+
+// $(document).ready(function(){
+//  $("#navColor").click(function () { 
+//      if($(this).hasClass("nav-color"))
+//         $("#navColor").removeClass("nav-color").addClass("light");               
+//      $(this).addClass("nav-color");        
+//   });
+// });
