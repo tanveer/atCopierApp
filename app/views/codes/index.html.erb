@@ -9,7 +9,10 @@
             <p><%= code.description %></p>
           </div>
         </div>
-        <% end %>  
+        <% end %>
+        <div class="apple_pagination">
+            <%= will_paginate @models, :page_links => false, previous_label:"Previous", next_label: "Next" %>
+          </div>   
       </div>
     </div> 
   </div>

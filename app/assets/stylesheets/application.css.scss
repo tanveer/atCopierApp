@@ -74,17 +74,18 @@
 */
 
 
-/*<!--Summertime theme-->
+/*<!--Summertime theme-->*/
 body {
-  background-color: #ffbe4f;
+  background-color: #fff;
   padding-top:  70px;
 }
 .title {
   display: inline-block;
   position: relative;
   width: 250px;
-  background-color: #ffbe4f;
-  border: 0.25em solid #0c457d;
+  background-color: #ae5a41;
+  border: 0.09em solid #0c457d;
+  box-shadow: 0px 0px 3px 3px #888888;
 }
 .button{
   width: 125px;
@@ -104,25 +105,37 @@ body {
     color:  #e8702a;
 }
 .caption h3 {
-  color: #0c457d;
+  color: #fff;
 }
-.caption h3:hover {
+/*.caption h3:hover {
   color: #e8702a;
-}
+}*/
 .box {
   background-color: #fff;
   padding: 2rem;
   border-radius: 10px;
 }
 .btn-custom{
-  background-color: #0ea7b5;
-  padding:  1rem;
-  border-radius: 2em;
-  border: 0.09em solid #0c457d;
+  background-color: #fff4e6;
+  padding: 10px;
+  border-radius: .5em;
+  border: 0.1em solid #0c457d;
+  box-shadow: 0px 0px 2px 2px #888888;
+  /*width: 65px;*/
+  height: 35px;
+  text-decoration: none;
+}
+.btn-custom:hover{
+  background-color: #fff;
+    -webkit-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+    -ms-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 800ms ease;
 }
 .nav-color{
   background-color: #0c457d;
-}<--end-->*/
+}/*<--end-->*/
 
 /*<--Program Catalog Color Palette-->
 body {
@@ -178,58 +191,12 @@ body {
 
 
 
-/*<--Cedar Ridge color theme-->
-body {
-  background-color: #e0cda7;
-  padding-top:  70px;
-}
-.images {
-  display: inline-block;
-  position: relative;
-  width: 250px;
-  background-color: #ac8f57;
-  border: 0.09em solid #be9b7b;
-}
-.button{
-  width: 125px;
-}
-.center {
-  text-align: center;
-}
-.logo {
-  font-family: 'Lucida Handwriting';
-  font-size: 2em;
-  font-variant: small-caps;
-}
-#text-color:hover {
-    color: #6b4423;
-}
-#text-color {
-    color: #e0cda7;
-}
-.caption h3 {
-  color: #6b4423;
-}
-.caption h3:hover {
-  color: #e0cda7;
-}
-.box {
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 10px;
-}
-.btn-custom{
-  background-color: #6b4423;
-  padding:  1rem;
-  border-radius: 2em;
-  border: 0.05em solid black;
-}
-.nav-color{
-  background-color: #2a334f;
-}<--END-->*/
+/*<--Cedar Ridge color theme-->*/
+/*ß*//*<--END-->*/
 
 /*<--Coffee Theme-->*/
-body {
+
+/*body {
   background-color: #be9b7b;
   padding-top:  70px;
 }
@@ -239,6 +206,7 @@ body {
   width: 250px;
   background-color: #4b3832;
   border: 0.09em solid #be9b7b;
+  box-shadow: 0px 0px 3px 3px #888888;
 }
 .errors {
   display: inline-block;
@@ -308,7 +276,7 @@ body {
 }
 .inline{
   display: inline-block;
-}
+}*/
 
 /*<--End--> */
 

@@ -1,13 +1,15 @@
 <div class="center">
   <div class="row">
     <div class="col-md-6 col-md-offset-3">
-      <% @makes.each do |make| %>
-      <div class="thumbnail title">
-        <div class="caption">
-          <h3><%= make.name %></h3>
-          <%= link_to 'Models', models_path(make), class: "btn btn-custom button" %>
-        </div>
-      </div>
+      <% if user_signed_in? %>
+        <% @makes.each do |make| %>
+          <div class="thumbnail title">
+            <div class="caption">
+              <h3><%= make.name %></h3>
+              <%= link_to 'Models', models_path(make), class: "btn btn-custom", style: "color: #ae5a41;" %>
+            </div>
+          </div>
+        <% end %>
       <% end %>
     </div>
   </div> 

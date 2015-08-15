@@ -4,8 +4,12 @@ class MakesController < ApplicationController
   before_action :find_models, only: [:show, :edit]
 
   def index
-    @makes = Make.all
-    @users = User.where(id: current_user)
+    if user_signed_in?
+      @makes = Make.all
+    else
+      redirect_to user_session_path
+    end
+
   end
 
   def show
