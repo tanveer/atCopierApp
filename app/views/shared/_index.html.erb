@@ -59,6 +59,13 @@
                 <%= link_to 'Models', models_path(make), class: "btn btn-default", style: "color: #0073e5;" %>
               </div>
             </div>
+            <% else %>
+            <div class="thumbnail title">
+              <div class="caption">
+                <h3><%= make.name %></h3>
+                <%= link_to 'Models', models_path(make), class: "btn btn-default", style: "color: #0073e5;" %>
+              </div>
+            </div>
           <% end %>
         <% end %>
       <% end %>

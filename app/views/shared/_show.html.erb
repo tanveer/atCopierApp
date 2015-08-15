@@ -60,15 +60,15 @@
               <%= link_to 'Codes', codes_path(model.id), class: "btn btn-default", style: "color: #002953;" %>
             </div>
           </div>
-          <% elss%>
+          <% else %>
           <div class="thumbnail title">
             <div class="caption">
               <h3><%= model.name %></h3>
               <%= link_to 'Codes', codes_path(model.id), class: "btn btn-default", style: "color: #326ada;" %>
             </div>
           </div>
-        <% end %>
-      <% end %>
+        <% end %> <!--end if -->
+      <% end %> <!-- end loop-->
           <div class="apple_pagination">
             <%= will_paginate @models, :page_links => false, previous_label:"Previous", next_label: "Next" %>
           </div> 
