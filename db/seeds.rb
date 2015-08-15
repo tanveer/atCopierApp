@@ -136,6 +136,13 @@ _224e = {
       "CD004" =>  "CD004 ... CD047  Hard disk error" 
 }
 
+
+
+kipModel = ["3000", "3100", "7170", "7770", "7970", "700", "720", "770", "9900"]
+kipModel.each do |model|
+      Model.create(name: model, make_id: 4)
+end
+
 _224e.each do |code, desc| 
       Code.create(code: code, description: desc, model_id: 6)
 end
