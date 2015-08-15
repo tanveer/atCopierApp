@@ -137,22 +137,26 @@ dp = {
             "E7-91" => "Data Security Kit Abnormal Hardware Key for Data Security Kit is not installed"
         }
 dp.each do |code, desc|
-  Code.create(code:code, description: desc, model_id: 5)
+  Code.create(code: code, description: desc, model_id: 5)
 end
+
 dp.each do |code, desc|
   Code.create(code:code, description: desc, model_id: 6)
 end
+
 dp.each do |code, desc|
-  Code.create(code:code, description: desc, model_id: 7)
+  Code.create(code: code, description: desc, model_id: 7)
 end
+
 b36and42.each do |code, desc|
-  Code.create(code => code, description => desc, model_id => 1)
+  Code.create(code: code, description: desc, model_id: 1)
 end
+
 b36and42.each do |code, desc|
-  Code.create(code => code, description => desc, model_id => 2)
+  Code.create(code: code, description: desc, model_id: 2)
 end
 
 kipModel = ["3000", "3100", "7170", "7770", "7970", "700", "720", "770", "9900"]
 kipModel.each do |model|
-      Model.create(name => model, make_id => 4)
+      Model.create(name: model, make_id: 4)
 end
