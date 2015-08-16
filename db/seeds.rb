@@ -418,19 +418,21 @@ eseriesBlack.each do |code,desc|
   Code.create(code: code, description: desc, model_id: 6)
   Code.create(code: code, description: desc, model_id: 7)
   Code.create(code: code, description: desc, model_id: 8)
+  Code.create(code: code, description: desc, model_id: 9)
+  Code.create(code: code, description: desc, model_id: 10)
 end
 
 _3500i.each do |code, desc|
-  Code.create(code: code, description: desc, model_id: 32)
-  Code.create(code: code, description: desc, model_id: 33)
-  Code.create(code: code, description: desc, model_id: 34)
+  Code.create(code: code, description: desc, model_id: 38)
+  Code.create(code: code, description: desc, model_id: 39)
+  Code.create(code: code, description: desc, model_id: 40)
 end
 
 c224e.each do |code, desc|
-  Code.create(code: code, description: desc, model_id: 22)
-  Code.create(code: code, description: desc, model_id: 23)
-  Code.create(code: code, description: desc, model_id: 24)
-  Code.create(code: code, description: desc, model_id: 25)
+  Code.create(code: code, description: desc, model_id: 32)
+  Code.create(code: code, description: desc, model_id: 33)
+  Code.create(code: code, description: desc, model_id: 34)
+  Code.create(code: code, description: desc, model_id: 35)
 end
 
 
