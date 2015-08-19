@@ -2,6 +2,9 @@
   <div class="center">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
+        <div class="apple_pagination">
+            <%= will_paginate @models, :page_links => false, previous_label:"Previous", next_label: "Next" %>
+        </div>
         <% @codes.each do |code| %>
         <div class="thumbnail errors">
           <div class="caption height: 250px;">
@@ -12,7 +15,7 @@
         <% end %>
         <div class="apple_pagination">
             <%= will_paginate @models, :page_links => false, previous_label:"Previous", next_label: "Next" %>
-          </div>   
+        </div>   
       </div>
     </div> 
   </div>
