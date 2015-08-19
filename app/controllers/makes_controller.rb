@@ -7,9 +7,8 @@ class MakesController < ApplicationController
     if user_signed_in?
       @makes = Make.all
     else
-      redirect_to user_session_path
+      redirect_to codes_main_path
     end
-
   end
 
   def show

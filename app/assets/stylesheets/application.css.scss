@@ -76,7 +76,7 @@
 
 /*<!--Summertime theme-->*/
 body {
-  background-color: #fff;
+  background-color: #333;
   padding-top:  70px;
 }
 .title {
@@ -201,6 +201,24 @@ body {
   border: 0.09em solid #0c457d;
   box-shadow: 0px 0px 3px 3px #888888;
 
+}
+.main h1{
+  text-align: center;
+  color: #e8702a;
+}
+.main p{
+    color: #fff;
+    text-align: center;
+}
+.main{
+    padding: 2rem;
+    margin: auto;
+}
+.main h2{
+  text-align: center;
+}
+.form-label-color{
+  color: #e8702a;
 }
 
 /*<--end-->*/
@@ -407,7 +425,7 @@ body {
   .apple_pagination a, .apple_pagination span {
     padding: 0.2em 0.3em; }
   .apple_pagination .disabled {
-    color: #aaaaaa; }
+    color: #aaa; }
   .apple_pagination .current {
     font-style: normal;
     font-weight: bold;
@@ -422,7 +440,7 @@ body {
     text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px; }
   .apple_pagination a {
     text-decoration: none;
-    color: black; }
+    color: #fff; }
     .apple_pagination a:hover, .apple_pagination a:focus {
       text-decoration: underline; }
 
