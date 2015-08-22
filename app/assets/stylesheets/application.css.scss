@@ -76,7 +76,7 @@
 
 /*<!--Summertime theme-->*/
 body {
-  background-color: #333;
+  background-color: #fff;
   padding-top:  70px;
 }
 .title {
@@ -107,9 +107,6 @@ body {
 .caption h3 {
   color: #fff;
 }
-/*.caption h3:hover {
-  color: #e8702a;
-}*/
 .box {
   background-color: #fff;
   padding: 2rem;
@@ -207,7 +204,7 @@ body {
   color: #e8702a;
 }
 .main p{
-    color: #fff;
+    color: #333;
     text-align: center;
 }
 .main{
@@ -217,10 +214,36 @@ body {
 .main h2{
   text-align: center;
 }
+.main span {
+  padding-top: 1rem;
+}
 .form-label-color{
   color: #e8702a;
 }
+.post{
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+.post h2{
 
+}
+.data{
+  background-color: #fff;
+  padding: 0.8rem; 
+  color: #333;
+  font-size: 1em;
+  word-spacing: 0px;
+  text-decoration: none;
+  border-bottom: 0.1em solid #acacac;
+}
+.scrol{
+  height:750px;
+   padding: 20px;
+  overflow:auto; 
+  background-color: #fff;
+}
 /*<--end-->*/
 
 /*<--Program Catalog Color Palette-->

@@ -1,0 +1,25 @@
+<% if user_signed_in? %>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="list-grouop-item">
+      <div>
+        <h2 style="text-align:center;">Forum</h2>
+      </div>
+        <div class="scrol">
+          <% @posts.each do |post| %>
+              <div class="data">
+                <%= image_tag post.user.avatar, size: "45x45", class: "img-circle" %>
+                <h2><%= link_to post.title, post_path(post) %></h2>
+                <p><%= post.content %></p><small><%= time_ago_in_words(post.created_at) %> ago by  <%=post.user.first_name %>
+              </small>
+              </div>
+          <%end%>
+        </div>
+        <div class="digg_pagination">
+          <%= will_paginate @posts, :page_links => false, previous_label:"Previous", next_label: "Next" %>
+        </div> 
+    </div>
+  </div>
+<% else %>
+  <%= render 'shared/welcome' %>
+<% end %>
