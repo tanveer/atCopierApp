@@ -15,7 +15,7 @@ gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'devise'
 gem "paperclip", "~> 4.3"
 gem 'simple_form'
-gem 'mail_form'
+# gem 'mail_form'
 gem 'will_paginate', '~> 3.0.7'
 gem 'faker'
 gem 'sdoc', '~> 0.4.0', group: :doc
@@ -25,9 +25,9 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'awesome_print', require: 'ap'
-  gem 'guard-rails'
-  gem 'guard-livereload'
-  gem 'rack-livereload'
-  gem 'guard-bundler'
+  # gem 'guard-rails'
+  # gem 'guard-livereload'
+  # gem 'rack-livereload'
+  # gem 'guard-bundler'
 end
 

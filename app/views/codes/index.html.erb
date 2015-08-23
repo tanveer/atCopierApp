@@ -2,16 +2,18 @@
   <div class="center">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
-        <div class="apple_pagination">
+        <div class="flicker_pagination">
             <%= will_paginate @models, :page_links => false, previous_label:"Previous", next_label: "Next" %>
         </div>
-        <% @codes.each do |code| %>
-        <div class="data">
-          <h2><%= code.code %></h2>
-          <p><%= code.description %></p>
+        <div class="scrol">
+          <% @codes.each do |code| %>
+          <div class="data">
+            <h2><%= code.code %></h2>
+            <p><%= code.description %></p>
+          </div>
+          <% end %>
         </div>
-        <% end %>
-        <div class="apple_pagination">
+        <div class="flicker_pagination">
             <%= will_paginate @models, :page_links => false, previous_label:"Previous", next_label: "Next" %>
         </div>   
       </div>
