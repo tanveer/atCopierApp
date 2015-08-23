@@ -90,6 +90,35 @@ body {
 .button{
   width: 125px;
 }
+.btn-primary{
+  background-color: #e8702a;
+  border: 0.1rem solid #e8702a;
+}
+.btn-primary:hover{
+    background-color: rgba(238, 221, 187, 0.9);
+    color: #000;
+    border: 0.1rem solid #e8702a;
+    -webkit-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+    -ms-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 800ms ease;
+}
+.btn-success{
+  background-color: #0ea7b5;
+  border: 0.1rem solid #0ea7b5;
+}
+.btn-success:hover{
+    background-color: rgba(238, 221, 187, 0.9);
+    color: #000;
+    border: 0.1rem solid #0ea7b5;
+    -webkit-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+    -ms-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 800ms ease;
+}
+
 .center {
   text-align: center;
 }
@@ -98,11 +127,16 @@ body {
   font-size: 2em;
   font-variant: small-caps;
 }
-#text-color:hover {
-    color: #ffbe4f;
-}
 #text-color {
     color:  #e8702a;
+}
+#text-color:hover {
+    color: #fff;
+    -webkit-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+    -ms-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 800ms ease;
 }
 .caption h3 {
   color: #fff;
@@ -113,25 +147,17 @@ body {
   border-radius: 10px;
 }
 .btn-custom{
-  background-color: #fff4e6;
-  padding: 10px;
+  background-color: #fff;
+  padding: 1rem;
   border-radius: .5em;
   border: 0.1em solid #0c457d;
   box-shadow: 0px 0px 2px 2px #888888;
   /*width: 65px;*/
-  height: 35px;
+  height: 1.5rem;
   text-decoration: none;
 }
-.btn-custom:hover{
-  background-color: #fff;
-    -webkit-transition: all 800ms ease;
-    -moz-transition: all 800ms ease;
-    -ms-transition: all 800ms ease;
-    -o-transition: all 800ms ease;
-    transition: all 800ms ease;
-}
 .nav-color{
-  background-color: #0c457d;
+  background-color: rgba(50, 206, 185, 0.8);
 }
 .konica {
   display: inline-block;
@@ -153,7 +179,7 @@ body {
   display: inline-block;
   position: relative;
   width: 250px;
-  background-color: #eb6841;
+  background-color: #a52a2a;
   border: 0.09em solid #0c457d;
   box-shadow: 0px 0px 3px 3px #888888;
 }
@@ -177,7 +203,7 @@ body {
   display: inline-block;
   position: relative;
   width: 250px;
-  background-color:#002953;
+  background-color: #b03060;
   border: 0.09em solid #0c457d;
   box-shadow: 0px 0px 3px 3px #888888;
 }
@@ -194,7 +220,7 @@ body {
   display: inline-block;
   position: relative;
   width: 250px;
-  background-color:#ff6b6b;
+  background-color:#e8702a;
   border: 0.09em solid #0c457d;
   box-shadow: 0px 0px 3px 3px #888888;
 
@@ -214,8 +240,9 @@ body {
 .main h2{
   text-align: center;
 }
-.main span {
+.main small {
   padding-top: 1rem;
+  text-align: center;
 }
 .form-label-color{
   color: #e8702a;
@@ -244,6 +271,7 @@ body {
   overflow:auto; 
   background-color: #fff;
 }
+
 /*<--end-->*/
 
 /*<--Program Catalog Color Palette-->

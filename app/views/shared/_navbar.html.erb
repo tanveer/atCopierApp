@@ -1,4 +1,4 @@
-<nav id="navColor" class="navbar navbar-inverse navbar-fixed-top nav-color">
+<nav id="navColor" class="navbar navbar-default navbar-fixed-top nav-color">
   <div class="container">
     <div class="navbar-header">
       <button id="lighter" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -18,7 +18,7 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li><%= link_to "Sign out", destroy_user_session_path,id: "text-color", method: :delete %> </li>
-            <li><%= link_to 'Post', new_post_path, id: "text-color"%></li>
+            <li><%= link_to 'Post', new_post_path, id: "text-color", class: "listColor"%></li>
           </ul>
         <% else %>
         <ul class="nav navbar-nav navbar-right">
