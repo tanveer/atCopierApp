@@ -5,14 +5,12 @@
         <div class="flicker_pagination">
             <%= will_paginate @models, :page_links => false, previous_label:"Previous", next_label: "Next" %>
         </div>
-        <div class="scrol">
           <% @codes.each do |code| %>
           <div class="data">
             <h2><%= code.code %></h2>
             <p><%= code.description %></p>
           </div>
           <% end %>
-        </div>
         <div class="flicker_pagination">
             <%= will_paginate @models, :page_links => false, previous_label:"Previous", next_label: "Next" %>
         </div>   
