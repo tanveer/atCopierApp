@@ -1,4 +1,4 @@
-class PostsController < ApplicationController
+  class PostsController < ApplicationController
   before_action :find_post, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -10,7 +10,6 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post =
     @post = current_user.posts.build(post_params)
     if @post.save
       flash[:notice] = "Post created!"

@@ -1,18 +1,20 @@
 class MakesController < ApplicationController
   #before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
   before_action :check_user, only: [:edit, :update, :destroy]
   before_action :find_models, only: [:show, :edit]
 
   def index
     if user_signed_in?
       @makes = Make.all
-    else
-      redirect_to  posts_path
-      # redirect_to user_session_path
     end
   end
 
   def show
+  end
+
+  def welcome
+
   end
 
   private

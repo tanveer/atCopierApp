@@ -7,63 +7,63 @@
             <div class="thumbnail konica">
               <div class="caption">
                 <h3><%= make.name %></h3>
-                <%= link_to 'Models', models_path(make), class: "btn btn-default", style: "color: #326ada;" %>
+                <%= link_to 'Models', makes_show_path(make), class: "btn btn-default", style: "color: #326ada;" %>
               </div>
             </div>
           <% elsif make.name == "Kyocera" %>
             <div class="thumbnail kyocera">
               <div class="caption">
                 <h3><%= make.name %></h3>
-                <%= link_to 'Models', models_path(make), class: "btn btn-default", style: "color: #e84c3d;" %>
+                <%= link_to 'Models', makes_show_path(make), class: "btn btn-default", style: "color: #e84c3d;" %>
               </div>
             </div>
           <% elsif make.name == "Panasonic" %>
             <div class="thumbnail panasonic">
               <div class="caption">
                 <h3><%= make.name %></h3>
-                <%= link_to 'Models', models_path(make), class: "btn btn-default", style: "color: #008080;" %>
+                <%= link_to 'Models', makes_show_path(make), class: "btn btn-default", style: "color: #008080;" %>
               </div>
             </div>
           <% elsif make.name == "Canon" %>
             <div class="thumbnail canon">
               <div class="caption">
                 <h3><%= make.name %></h3>
-                <%= link_to 'Models', models_path(make), class: "btn btn-default", style: "color: #eb6841;" %>
+                <%= link_to 'Models', makes_show_path(make), class: "btn btn-default", style: "color: #eb6841;" %>
               </div>
             </div>
           <% elsif make.name == "Sharp" %>
             <div class="thumbnail sharp">
               <div class="caption">
                 <h3><%= make.name %></h3>
-                <%= link_to 'Models', models_path(make), class: "btn btn-default", style: "color: #ff6b6b;" %>
+                <%= link_to 'Models', makes_show_path(make), class: "btn btn-default", style: "color: #ff6b6b;" %>
               </div>
             </div>
           <% elsif make.name == "HP" %>
             <div class="thumbnail hp">
               <div class="caption">
                 <h3><%= make.name %></h3>
-                <%= link_to 'Models', models_path(make), class: "btn btn-default", style: "color: #326ada;" %>
+                <%= link_to 'Models', makes_show_path(make), class: "btn btn-default", style: "color: #326ada;" %>
               </div>
             </div>
           <% elsif make.name == "Ricoh" %>
             <div class="thumbnail ricoh">
               <div class="caption">
                 <h3><%= make.name %></h3>
-                <%= link_to 'Models', models_path(make), class: "btn btn-default", style: "color: #002953;" %>
+                <%= link_to 'Models', makes_show_path(make), class: "btn btn-default", style: "color: #002953;" %>
               </div>
             </div>
           <% elsif make.name == "KIP" %>
             <div class="thumbnail kip">
               <div class="caption">
                 <h3><%= make.name %></h3>
-                <%= link_to 'Models', models_path(make), class: "btn btn-default", style: "color: #0073e5;" %>
+                <%= link_to 'Models', makes_show_path(make), class: "btn btn-default", style: "color: #0073e5;" %>
               </div>
             </div>
             <% else %>
             <div class="thumbnail title">
               <div class="caption">
                 <h3><%= make.name %></h3>
-                <%= link_to 'Models', models_path(make), class: "btn btn-default", style: "color: #0073e5;" %>
+                <%= link_to 'Models', makes_show_path(make), class: "btn btn-default", style: "color: #0073e5;" %>
               </div>
             </div>
           <% end %>

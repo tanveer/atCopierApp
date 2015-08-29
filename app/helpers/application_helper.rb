@@ -6,4 +6,8 @@ module ApplicationHelper
       return "Welcome #{f_name} #{l_name}"
     end
   end
+  
+  def users
+    @users = User.all
+  end
 end

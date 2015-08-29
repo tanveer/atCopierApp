@@ -18,66 +18,17 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-
-/*body {
-  background-color: #7d7d7d;
-  padding-top:  70px;
-}
-.title {
-  display: inline-block;
-  position: relative;
-  width: 250px;
-  background-color: #e4e4e4;
-  border: 0.09em solid #b35555;
-}
-.button{
-  width: 125px;
-}
-.center {
-  text-align: center;
-}
-.logo {
-  font-family: 'Lucida Handwriting';
-  font-size: 2em;
-  font-variant: small-caps;
-}
-#text-color:hover {
-    color: #ffbe4f;
-}
-#text-color {
-    color:  #434343;
-}
-.caption h3 {
-  color: #b35555;
-}
-.caption h3:hover {
-  color: #e8702a;
-}
-.box {
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 10px;
-}
-.btn-custom{
-  background-color: #434343;
-  padding:  .5rem;
-  border-radius: 1em;
-  border: 0.09em solid #b35555;
- 
-}
- .btn-custom:hover{
-      background-color: #e4e4e4;
-  }
-.nav-color{
-  background-color: #b35555;
-}
-*/
-
-
-/*<!--Summertime theme-->*/
 body {
   background-color: #fff;
   padding-top:  70px;
+}
+.fixed{
+  position: fixed;
+  top: 6rem;
+  left: 0;
+  z-index: 999;
+  width: 100%;;
+  /*height: 23px;*/
 }
 .title {
   display: inline-block;
@@ -118,6 +69,19 @@ body {
     -o-transition: all 800ms ease;
     transition: all 800ms ease;
 }
+.btn-danger{
+  background-color: #cc2a36;
+}
+.btn-danger:hover{
+  background-color: rgba(238, 221, 187, 0.9);
+    color: #000;
+    border: 0.1rem solid #cc2a36;
+    -webkit-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+    -ms-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 800ms ease;
+}
 
 .center {
   text-align: center;
@@ -128,7 +92,7 @@ body {
   font-variant: small-caps;
 }
 #text-color {
-    color:  #e8702a;
+    color:  #4f372d;
 }
 #text-color:hover {
     color: #fff;
@@ -146,18 +110,8 @@ body {
   padding: 2rem;
   border-radius: 10px;
 }
-.btn-custom{
-  background-color: #fff;
-  padding: 1rem;
-  border-radius: .5em;
-  border: 0.1em solid #0c457d;
-  box-shadow: 0px 0px 2px 2px #888888;
-  /*width: 65px;*/
-  height: 1.5rem;
-  text-decoration: none;
-}
 .nav-color{
-  background-color: rgba(50, 206, 185, 0.8);
+  background-color: rgba(0, 160, 176, 0.90);
 }
 .konica {
   display: inline-block;
@@ -272,152 +226,6 @@ body {
   background-color: #fff;
 }
 
-/*<--end-->*/
-
-/*<--Program Catalog Color Palette-->
-body {
-  background-color: #4f372d;
-  padding-top:  70px;
-}
-.title {
-  display: inline-block;
-  position: relative;
-  width: 250px;
-  background-color: #00a0b0;
-  border: 0.09em solid #be9b7b;
-}
-.button{
-  width: 125px;
-}
-.center {
-  text-align: center;
-}
-.logo {
-  font-family: 'Lucida Handwriting';
-  font-size: 2em;
-  font-variant: small-caps;
-}
-#text-color:hover {
-    color: #4f372d;
-}
-#text-color {
-    color:  #edc951;
-}
-.caption h3 {
-  color: #eb6841;
-}
-.caption h3:hover {
-  color: #e0cda7;
-}
-.box {
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 10px;
-}
-.btn-custom{
-  background-color: #edc951;
-  padding:  1rem;
-  border-radius: 2em;
-  border: 0.05em solid black;
-}
-.nav-color{
-  background-color: #cc2a36;
-}
-
-<--end-->*/
-
-
-
-/*<--Cedar Ridge color theme-->*/
-/*ß*//*<--END-->*/
-
-/*<--Coffee Theme-->*/
-
-/*body {
-  background-color: #be9b7b;
-  padding-top:  70px;
-}
-.title {
-  display: inline-block;
-  position: relative;
-  width: 250px;
-  background-color: #4b3832;
-  border: 0.09em solid #be9b7b;
-  box-shadow: 0px 0px 3px 3px #888888;
-}
-.errors {
-  display: inline-block;
-  position: relative;
-  width: 250px;
-  background-color: #fff;
-  border: 0.09em solid #be9b7b;
-}
-.button{
-  width: 125px;
-}
-.center {
-  text-align: center;
-}
-.logo {
-  font-family: 'Lucida Handwriting';
-  font-size: 2em;
-  font-variant: small-caps;
-}
-#text-color:hover {
-    color: #fff;
-    -webkit-transition: all 800ms ease;
-    -moz-transition: all 800ms ease;
-    -ms-transition: all 800ms ease;
-    -o-transition: all 800ms ease;
-    transition: all 800ms ease;
-}
-#text-color {
-    color: #be9b7b;
-}
-.caption h3 {
-  color: #be9b7b;
-}
-.caption h3:hover {
-  color: #fff4e6;
-}
-.box {
-  background-color: #4b3832;
-  padding: 2rem;
-  border-radius: 10px;
-  position: relative;
-}
-.btn-custom{
-  background-color: #fff4e6;
-  padding:  1rem;
-  border-radius: .5em;
-  border: 0.25em solid #854442;
-  width: 75px;
-  text-decoration: none;
-}
-.btn-custom:hover{
-  background-color: #be9b7b;
-    -webkit-transition: all 800ms ease;
-    -moz-transition: all 800ms ease;
-    -ms-transition: all 800ms ease;
-    -o-transition: all 800ms ease;
-    transition: all 800ms ease;
-}
-.nav-color{
-  background-color: rgb(133,68,66);
-}
-.nav-color:hover{
-    background-color: rgba(133,68,66, 0.9);
-}
-.form-label-color{
-  color: #be9b7b;
-}
-.inline{
-  display: inline-block;
-}*/
-
-/*<--End--> */
-
-/*<!--will_paginate styles -->*/
 
 .digg_pagination {
   background: white;
