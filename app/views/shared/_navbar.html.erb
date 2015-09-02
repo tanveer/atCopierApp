@@ -1,24 +1,27 @@
 <nav id="navColor" class="navbar navbar-default navbar-fixed-top nav-color">
   <div class="container">  
     <div class="navbar-header">   
-      <button id="lighter" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+      <button id="lighter" type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only"></span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
       </button>
-      <div class="navbar-brand logo" id="text-color">
+      <div class="navbar-brand logo" id="text-color">`
         <% if user_signed_in? %>
-          <%= link_to '@Copiers', makes_index_path, id: "text-color" %>
-        <% else %>
           <%= link_to '@Copiers', root_path, id: "text-color" %>
+        <% else %>
+          <%= link_to '@Copiers', user_session_path, id: "text-color" %>
         <% end %>
       </div>  
     </div><!--navbar header-->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <% if user_signed_in? %>
+      <ul class="nav navbar-nav">
+        <li><%= link_to 'Codes', makes_index_path, id: "text-color" %></li>
+      </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to 'Home', makes_index_path, id: "text-color" %></li>
+            <!-- <li><%= link_to 'Home', root_path, id: "text-color" %></li> -->
             <li><%= link_to 'Forum' , posts_path, id: "text-color"%></li>
             <li><%= link_to 'Post', new_post_path, id: "text-color", class: "listColor"%></li>
              <li><%= link_to "Sign out", destroy_user_session_path,id: "text-color", method: :delete %> </li>
