@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :posts
-  resources "contacts", only: [:new, :create]
+  resources :contacts
   get 'makes/index'
   get 'codes/index'
   get 'makes/show'

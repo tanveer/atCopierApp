@@ -7,7 +7,7 @@
         <span class="icon-bar middle-bar"></span>
         <span class="icon-bar bottom-bar"></span>
       </button>
-      <div class="navbar-brand logo" id="text-color">`
+      <div class="navbar-brand logo" id="text-color">
         <% if user_signed_in? %>
           <%= link_to '@Copiers', root_path, id: "text-color" %>
         <% else %>
@@ -21,10 +21,10 @@
         <li><%= link_to 'Codes', makes_index_path, id: "text-color" %></li>
       </ul>
         <ul class="nav navbar-nav navbar-right">
-            <!-- <li><%= link_to 'Home', root_path, id: "text-color" %></li> -->
             <li><%= link_to 'Forum' , posts_path, id: "text-color"%></li>
             <li><%= link_to 'Post', new_post_path, id: "text-color", class: "listColor"%></li>
              <li><%= link_to "Sign out", destroy_user_session_path,id: "text-color", method: :delete %> </li>
+             <li><%= link_to "Contact", new_contact_path %></li>
           </ul>
         <% else %>
         <ul class="nav navbar-nav navbar-right">

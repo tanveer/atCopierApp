@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="main">
+      <h2 class="form-label-color">New post</h2>
+        <%= simple_form_for @contact do |f| %>
+          <div class="form-inputs form-label-color"> 
+            <%= f.input :name, autofocus: true%>
+            <%= f.input :email, autofocus: true%>
+            <%= f.input :message, autofocus: true%>
+          </div>
+          <div class="form-actions inline">
+            <%= f.button :submit, "Send", class: 'btn btn-success' %> 
+          </div>
+        <% end %>
+    </div>
+  </div>
+</div>

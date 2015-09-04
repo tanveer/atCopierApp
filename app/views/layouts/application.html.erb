@@ -1,35 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AtCopierApp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <!--Navigation partial-->
-  <%= render 'shared/navbar' %>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AtCopierApp</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
 
-  <!--alert messages-->
-  <div class="container">
-    <% if notice %>
-      <div class="alert alert-notice alert-success alert-dismissible" role="alert">
-         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-         <%= notice %>
-      </div>
-    <% elsif alert %>
-      <div class="alert alert-notice alert-danger alert-dismissible" role="alert">
-         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <strong><%= alert %></strong>
-      </div>
-    <% end %>
-    
-  </div><!--end alert-->
+  <body>
+    <!--Navigation-->
+    <%= render partial: 'shared/navbar'  %>
 
-  <%= yield %>
+    <!--alert message-->
+    <div class="container">
+      <%= render partial: 'shared/notice' %>
+    </div>
 
-</body>
+    <%= yield %>
+  </body>
+
 </html>
