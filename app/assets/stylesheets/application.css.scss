@@ -117,7 +117,6 @@ body {
   display: inline-block;
   position: relative;
   width: 250px;
-  background-color: #326ada;
   border: 0.09em solid #0c457d;
   box-shadow: 0px 0px 3px 3px #888888;
 }
@@ -225,7 +224,18 @@ body {
   overflow:auto; 
   background-color: #fff;
 }
-
+.btn-default {
+  box-shadow: 0em 0em 0.75em 0.1em #fff;
+  background-color: #454545;
+}
+.btn-default:hover {
+  box-shadow: none;
+  -webkit-transition: all 800ms ease;
+  -moz-transition: all 800ms ease;
+  -ms-transition: all 800ms ease;
+  -o-transition: all 800ms ease;
+  transition: all 800ms ease;
+}
 
 .digg_pagination {
   background: white;
@@ -355,7 +365,6 @@ body {
   &:hover {
     background: transparent !important;
   }
-
   .icon-bar {
     width: 22px;
     transition: all 0.2s;
@@ -365,7 +374,7 @@ body {
     -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
     transform: rotate(45deg);
     -ms-transform-origin: 10% 10%;
-    -webkit-transform: 10% 10%;
+    -webkit-transform-origin: 10% 10%;
     transform-origin: 10% 10%;
   }
   .middle-bar {
@@ -376,7 +385,7 @@ body {
     -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
     transform: rotate(-45deg);
     -ms-transform-origin: 10% 90%;
-    -webkit-transform: 10% 90%;
+    -webkit-transform-origin: 10% 90%;
     transform-origin: 10% 90%;
   }
 }

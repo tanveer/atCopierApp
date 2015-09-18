@@ -1,4 +1,10 @@
 Rails.application.configure do
+  ActionMailer::Base.delivery_method = :smtp
+  ActionMailer::Base.smtp_settings = {
+    :address => "localhost",
+    :port => 1025,
+    :domain => "everydayrails.com" }
+    
   Paperclip.options[:command_path] = '/usr/local/bin/'
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -39,5 +45,4 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 end

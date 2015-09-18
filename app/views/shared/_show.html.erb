@@ -3,72 +3,14 @@
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
         <% @models.each do |model| %>
-        <% if model.make_id == 1 %>
-          <div class="thumbnail konica">
+          <div class="thumbnail konica" style="background-color: <%= @model_color[model.make_id] %>;">
             <div class="caption">
               <h3><%= model.name %></h3>
-              <%= link_to 'Codes', codes_index_path(model.id), class: "btn btn-default", style: "color: #326ada;" %>
+              <%= link_to 'Codes', codes_index_path(model.id), class: "btn btn-default", style: "color: #{@model_color[model.make_id]};" %>
             </div>
           </div>
-        <% elsif model.make_id == 2 %>
-          <div class="thumbnail kyocera">
-            <div class="caption">
-              <h3><%= model.name %></h3>
-              <%= link_to 'Codes', codes_index_path(model.id), class: "btn btn-default", style: "color: #e84c3d;" %>
-            </div>
-          </div>
-        <% elsif model.make_id == 3 %>
-          <div class="thumbnail panasonic">
-            <div class="caption">
-              <h3><%= model.name %></h3>
-              <%= link_to 'Codes', codes_index_path(model.id), class: "btn btn-default", style: "color: #008080;" %>
-            </div>
-          </div>
-         <% elsif model.make_id == 4 %>
-          <div class="thumbnail kip">
-            <div class="caption">
-              <h3><%= model.name %></h3>
-              <%= link_to 'Codes', codes_index_path(model.id), class: "btn btn-default",style: "color: #0073e5;" %>
-            </div>
-          </div>
-         <% elsif model.make_id == 5 %>
-          <div class="thumbnail sharp">
-            <div class="caption">
-              <h3><%= model.name %></h3>
-              <%= link_to 'Codes', codes_index_path(model.id), class: "btn btn-default", style: "color: #ff6b6b;" %>
-            </div>
-          </div>
-          <% elsif model.make_id == 6 %>
-          <div class="thumbnail canon">
-            <div class="caption">
-              <h3><%= model.name %></h3>
-              <%= link_to 'Codes', codes_index_path(model.id), class: "btn btn-default", style: "color: #eb6841;" %>
-            </div>
-          </div>
-          <% elsif model.make_id == 7 %>
-          <div class="thumbnail hp">
-            <div class="caption">
-              <h3><%= model.name %></h3>
-              <%= link_to 'Codes', codes_index_path(model.id), class: "btn btn-default",style: "color: #326ada;" %>
-            </div>
-          </div>
-          <% elsif model.make_id == 8 %>
-          <div class="thumbnail ricoh">
-            <div class="caption">
-              <h3><%= model.name %></h3>
-              <%= link_to 'Codes', codes_index_path(model.id), class: "btn btn-default", style: "color: #002953;" %>
-            </div>
-          </div>
-          <% else %>
-          <div class="thumbnail title">
-            <div class="caption">
-              <h3><%= model.name %></h3>
-              <%= link_to 'Codes', codes_index_path(model.id), class: "btn btn-default", style: "color: #326ada;" %>
-            </div>
-          </div>
-        <% end %> <!--end if -->
       <% end %> <!-- end loop-->
-          <div class="apple_pagination">
+          <div class="digg_pagination">
             <%= will_paginate @models, :page_links => false, previous_label:"Previous", next_label: "Next" %>
           </div> 
       </div>
