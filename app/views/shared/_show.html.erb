@@ -1,4 +1,4 @@
-<div class="contianer">
+
   <div class="center">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
@@ -10,10 +10,9 @@
             </div>
           </div>
       <% end %> <!-- end loop-->
-          <div class="digg_pagination">
-            <%= will_paginate @models, :page_links => false, previous_label:"Previous", next_label: "Next" %>
-          </div> 
+        <div class="digg_pagination">
+        <%= will_paginate @models, :page_links => false, previous_label: "Previous", next_label: "Next"%>
+      </div> 
       </div>
     </div> 
   </div>
-</div> 
