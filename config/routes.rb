@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   devise_for :users
   resources :posts
   resources :contacts
@@ -6,6 +7,6 @@ Rails.application.routes.draw do
   get 'codes/index'
   get 'makes/show'
   
-  root "makes#welcome"
+  root 'makes#welcome'
 
 end
